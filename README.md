@@ -29,7 +29,12 @@
   1) To run this, install Python and PiP
   2) Install all libraries from requirements.txt
   3) Type "python -m pytest" in cmd. For detailed report and logs, type "python -m pytest -v -s   --capture=tee-sys  --html=reports/report.html"
+  4) You can also run using GitHub action. I have created the manual flow. Needs to be logged in to see the executed runs. 
 
+#Results
+  1) All 8 tests are passing at the moment. The same thing can be seen in logs/report. Test Data needs to be up-to-date.
+
+     
 
 
      
