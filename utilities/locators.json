@@ -1,0 +1,12 @@
+{
+    "close_popup_homepage":"//a[contains(@aria-label,'Close')]",
+    "ds_homepage":"//div[normalize-space(text())='Docs & Series']",
+    "all_toggle_ds_age":"//span[normalize-space(text())='All']",
+    "featured_documentary_section_ds_page":"//p[normalize-space(text())='Featured Documentary']",
+    "featured_documentary_title_ds_page":"//p[normalize-space(text())='']",
+    "featured_documentary_description_ds_page":"//p[normalize-space(text())='']",
+    "featured_dcoumentary_play_ds_page":"//span[text()='Watch Now']",
+    "recently_added_title_ds_page":"//p[normalize-space(text())='' and contains(@class,'title') and ancestor::div[contains(@aria-label,'Recently Added')]]",
+    "recently_added_caption_ds_page":"//p[normalize-space(text())='' and contains(@class,'caption') and ancestor::div[contains(@aria-label,'Recently Added')]]",
+    "see_more_redirection_link_ds_page":"//span[normalize-space(text())='See More' and preceding-sibling::h2[normalize-space(text())='']]"
+}

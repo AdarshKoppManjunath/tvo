@@ -1,0 +1,38 @@
+{
+    
+        "featured_documentary_name":"Ever Deadly",
+        "featured_documentary_description":"An immersive, visceral music and cinama experience featuring avant-garde Inuit throat singer Tanya Tagaq.",
+        "featured_documentary_url":"https://www.tvo.org/video/documentaries/ever-deadly",
+        "recently_added_title_and_caption":
+        [
+            {
+                "title":"Heartbeat",
+                "caption":"Seeds of Destruction"
+            },
+            {
+                "title":"The Life-Sized City",
+                "caption":"Antwerp"
+            },
+            {
+                "title":"Killing Patient Zero",
+                "caption":"2023"
+            }
+        ],
+        "see_more_redirection_links":[
+            {
+                "section_name":"TVO Originals",
+                "redirection_link":"https://www.tvo.org/series-docs/browse/categories/TVO+Originals"
+            },
+            {
+                "section_name":"Art",
+                "redirection_link":"https://www.tvo.org/series-docs/browse/categories/Art"
+            },
+            {
+                "section_name":"Canadian Docs",
+                "redirection_link":"https://www.tvo.org/series-docs/browse/categories/Canadian+Docs"
+            }
+
+        ]
+            
+    
+}
