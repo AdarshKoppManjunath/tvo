@@ -23,7 +23,16 @@ class Test_DocsSeries:
         self.util_obj.logger.info("\n ***** test_05_recently_added_list *****")
         status,message=self.ds_obj.recently_added_title_and_respective_caption()
         assert status,message
-    def test_06_see_more_redirection_link (self):
+    def test_06_see_more_redirection_link(self):
         self.util_obj.logger.info("\n ***** test_06_see_more_redirection_link  *****")
         status,message=self.ds_obj.see_more_redirection_link()
         assert status,message
+    def test_07_image_redirection_link(self):
+        self.util_obj.logger.info("\n ***** test_07_image_redirection_link *****")
+        status,message=self.ds_obj.image_redirection_link()
+        assert status,message
+    def test_08_section_or_categories(self):
+        self.util_obj.logger.info("\n ***** test_08_section_or_categories *****")
+        status,message=self.ds_obj.section_or_categories()
+        assert status,message
+        

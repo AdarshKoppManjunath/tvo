@@ -253,10 +253,10 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>report.html</h1>
-    <p>Report generated on 29-Jun-2023 at 21:01:28 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
+    <p>Report generated on 30-Jun-2023 at 12:04:26 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
     <h2>Summary</h2>
-    <p>5 tests ran in 46.50 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">5 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">1 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>8 tests ran in 19.12 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">8 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -267,24 +267,15 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
           <th class="sortable links" col="links">Links</th></tr>
         <tr hidden="true" id="not-found-message">
           <th colspan="4">No results found. Try to check the filters</th></tr></thead>
-      <tbody class="error results-table-row">
-        <tr>
-          <td class="col-result">Error</td>
-          <td class="col-name">testCases/test_docs_series_page.py::Test_DocsSeries::test_06_see_more_redirection_link::setup</td>
-          <td class="col-duration">25.04</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">[gw5] win32 -- Python 3.11.4 C:\Python311\python.exe<br/>[gw5] win32 -- Python 3.11.4 C:\Python311\python.exe<br/><br/>request = &lt;SubRequest &#x27;setup&#x27; for &lt;Function test_06_see_more_redirection_link&gt;&gt;<br/><br/>    @pytest.fixture(scope=&#x27;class&#x27;)<br/>    def setup(request):<br/>        chrome_service = Service(ChromeDriverManager(chrome_type=ChromeType.GOOGLE).install())<br/>        chrome_options = Options()<br/>        chrome_options.add_argument(&quot;--disable-gpu&quot;)<br/>        chrome_options.add_argument(&quot;--window-size=1920,1200&quot;)<br/>        chrome_options.add_argument(&quot;--ignore-certificate-errors&quot;)<br/>        #chrome_options.add_argument(&quot;--headless&quot;)<br/>        #chrome_options.add_argument(&quot;--disable-extensions&quot;)<br/>        #chrome_options.add_argument(&quot;--no-sandbox&quot;)<br/>        #chrome_options.add_argument(&quot;--disable-dev-shm-usage&quot;)<br/>&gt;       request.cls.driver = webdriver.Chrome(service=chrome_service, options=chrome_options)<br/><br/>testCases\conftest.py:25: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/>C:\Python311\Lib\site-packages\selenium\webdriver\chrome\webdriver.py:49: in __init__<br/>    super().__init__(<br/>C:\Python311\Lib\site-packages\selenium\webdriver\chromium\webdriver.py:54: in __init__<br/>    super().__init__(<br/>C:\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py:206: in __init__<br/>    self.start_session(capabilities)<br/>C:\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py:291: in start_session<br/>    response = self.execute(Command.NEW_SESSION, caps)[&quot;value&quot;]<br/>C:\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py:346: in execute<br/>    self.error_handler.check_response(response)<br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>self = &lt;selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x000001F507F466D0&gt;<br/>response = {&#x27;status&#x27;: 500, &#x27;value&#x27;: &#x27;{&quot;value&quot;:{&quot;error&quot;:&quot;session not created&quot;,&quot;message&quot;:&quot;session not created\\nfrom no such execut...\n\\tRtlGetAppContainerNamedObjectPath [0x77457B4E+286]\\n\\tRtlGetAppContainerNamedObjectPath [0x77457B1E+238]\\n&quot;}}&#x27;}<br/><br/>    def check_response(self, response: Dict[str, Any]) -&gt; None:<br/>        &quot;&quot;&quot;Checks that a JSON response from the WebDriver does not have an<br/>        error.<br/>    <br/>        :Args:<br/>         - response - The JSON response from the WebDriver server as a dictionary<br/>           object.<br/>    <br/>        :Raises: If the response contains an error message.<br/>        &quot;&quot;&quot;<br/>        status = response.get(&quot;status&quot;, None)<br/>        if not status or status == ErrorCode.SUCCESS:<br/>            return<br/>        value = None<br/>        message = response.get(&quot;message&quot;, &quot;&quot;)<br/>        screen: str = response.get(&quot;screen&quot;, &quot;&quot;)<br/>        stacktrace = None<br/>        if isinstance(status, int):<br/>            value_json = response.get(&quot;value&quot;, None)<br/>            if value_json and isinstance(value_json, str):<br/>                import json<br/>    <br/>                try:<br/>                    value = json.loads(value_json)<br/>                    if len(value) == 1:<br/>                        value = value[&quot;value&quot;]<br/>                    status = value.get(&quot;error&quot;, None)<br/>                    if not status:<br/>                        status = value.get(&quot;status&quot;, ErrorCode.UNKNOWN_ERROR)<br/>                        message = value.get(&quot;value&quot;) or value.get(&quot;message&quot;)<br/>                        if not isinstance(message, str):<br/>                            value = message<br/>                            message = message.get(&quot;message&quot;)<br/>                    else:<br/>                        message = value.get(&quot;message&quot;, None)<br/>                except ValueError:<br/>                    pass<br/>    <br/>        exception_class: Type[WebDriverException]<br/>        if status in ErrorCode.NO_SUCH_ELEMENT:<br/>            exception_class = NoSuchElementException<br/>        elif status in ErrorCode.NO_SUCH_FRAME:<br/>            exception_class = NoSuchFrameException<br/>        elif status in ErrorCode.NO_SUCH_SHADOW_ROOT:<br/>            exception_class = NoSuchShadowRootException<br/>        elif status in ErrorCode.NO_SUCH_WINDOW:<br/>            exception_class = NoSuchWindowException<br/>        elif status in ErrorCode.STALE_ELEMENT_REFERENCE:<br/>            exception_class = StaleElementReferenceException<br/>        elif status in ErrorCode.ELEMENT_NOT_VISIBLE:<br/>            exception_class = ElementNotVisibleException<br/>        elif status in ErrorCode.INVALID_ELEMENT_STATE:<br/>            exception_class = InvalidElementStateException<br/>        elif (<br/>            status in ErrorCode.INVALID_SELECTOR<br/>            or status in ErrorCode.INVALID_XPATH_SELECTOR<br/>            or status in ErrorCode.INVALID_XPATH_SELECTOR_RETURN_TYPER<br/>        ):<br/>            exception_class = InvalidSelectorException<br/>        elif status in ErrorCode.ELEMENT_IS_NOT_SELECTABLE:<br/>            exception_class = ElementNotSelectableException<br/>        elif status in ErrorCode.ELEMENT_NOT_INTERACTABLE:<br/>            exception_class = ElementNotInteractableException<br/>        elif status in ErrorCode.INVALID_COOKIE_DOMAIN:<br/>            exception_class = InvalidCookieDomainException<br/>        elif status in ErrorCode.UNABLE_TO_SET_COOKIE:<br/>            exception_class = UnableToSetCookieException<br/>        elif status in ErrorCode.TIMEOUT:<br/>            exception_class = TimeoutException<br/>        elif status in ErrorCode.SCRIPT_TIMEOUT:<br/>            exception_class = TimeoutException<br/>        elif status in ErrorCode.UNKNOWN_ERROR:<br/>            exception_class = WebDriverException<br/>        elif status in ErrorCode.UNEXPECTED_ALERT_OPEN:<br/>            exception_class = UnexpectedAlertPresentException<br/>        elif status in ErrorCode.NO_ALERT_OPEN:<br/>            exception_class = NoAlertPresentException<br/>        elif status in ErrorCode.IME_NOT_AVAILABLE:<br/>            exception_class = ImeNotAvailableException<br/>        elif status in ErrorCode.IME_ENGINE_ACTIVATION_FAILED:<br/>            exception_class = ImeActivationFailedException<br/>        elif status in ErrorCode.MOVE_TARGET_OUT_OF_BOUNDS:<br/>            exception_class = MoveTargetOutOfBoundsException<br/>        elif status in ErrorCode.JAVASCRIPT_ERROR:<br/>            exception_class = JavascriptException<br/>        elif status in ErrorCode.SESSION_NOT_CREATED:<br/>            exception_class = SessionNotCreatedException<br/>        elif status in ErrorCode.INVALID_ARGUMENT:<br/>            exception_class = InvalidArgumentException<br/>        elif status in ErrorCode.NO_SUCH_COOKIE:<br/>            exception_class = NoSuchCookieException<br/>        elif status in ErrorCode.UNABLE_TO_CAPTURE_SCREEN:<br/>            exception_class = ScreenshotException<br/>        elif status in ErrorCode.ELEMENT_CLICK_INTERCEPTED:<br/>            exception_class = ElementClickInterceptedException<br/>        elif status in ErrorCode.INSECURE_CERTIFICATE:<br/>            exception_class = InsecureCertificateException<br/>        elif status in ErrorCode.INVALID_COORDINATES:<br/>            exception_class = InvalidCoordinatesException<br/>        elif status in ErrorCode.INVALID_SESSION_ID:<br/>            exception_class = InvalidSessionIdException<br/>        elif status in ErrorCode.UNKNOWN_METHOD:<br/>            exception_class = UnknownMethodException<br/>        else:<br/>            exception_class = WebDriverException<br/>        if not value:<br/>            value = response[&quot;value&quot;]<br/>        if isinstance(value, str):<br/>            raise exception_class(value)<br/>        if message == &quot;&quot; and &quot;message&quot; in value:<br/>            message = value[&quot;message&quot;]<br/>    <br/>        screen = None  # type: ignore[assignment]<br/>        if &quot;screen&quot; in value:<br/>            screen = value[&quot;screen&quot;]<br/>    <br/>        stacktrace = None<br/>        st_value = value.get(&quot;stackTrace&quot;) or value.get(&quot;stacktrace&quot;)<br/>        if st_value:<br/>            if isinstance(st_value, str):<br/>                stacktrace = st_value.split(&quot;\n&quot;)<br/>            else:<br/>                stacktrace = []<br/>                try:<br/>                    for frame in st_value:<br/>                        line = frame.get(&quot;lineNumber&quot;, &quot;&quot;)<br/>                        file = frame.get(&quot;fileName&quot;, &quot;&lt;anonymous&gt;&quot;)<br/>                        if line:<br/>                            file = f&quot;{file}:{line}&quot;<br/>                        meth = frame.get(&quot;methodName&quot;, &quot;&lt;anonymous&gt;&quot;)<br/>                        if &quot;className&quot; in frame:<br/>                            meth = f&quot;{frame[&#x27;className&#x27;]}.{meth}&quot;<br/>                        msg = &quot;    at %s (%s)&quot;<br/>                        msg = msg % (meth, file)<br/>                        stacktrace.append(msg)<br/>                except TypeError:<br/>                    pass<br/>        if exception_class == UnexpectedAlertPresentException:<br/>            alert_text = None<br/>            if &quot;data&quot; in value:<br/>                alert_text = value[&quot;data&quot;].get(&quot;text&quot;)<br/>            elif &quot;alert&quot; in value:<br/>                alert_text = value[&quot;alert&quot;].get(&quot;text&quot;)<br/>            raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here<br/>&gt;       raise exception_class(message, screen, stacktrace)<br/><span class="error">E       selenium.common.exceptions.SessionNotCreatedException: Message: session not created</span><br/><span class="error">E       from no such execution context: loader has changed while resolving nodes</span><br/><span class="error">E         (Session info: chrome=114.0.5735.134)</span><br/><span class="error">E       Stacktrace:</span><br/><span class="error">E       Backtrace:</span><br/><span class="error">E       	GetHandleVerifier [0x00B9A813+48355]</span><br/><span class="error">E       	(No symbol) [0x00B2C4B1]</span><br/><span class="error">E       	(No symbol) [0x00A35358]</span><br/><span class="error">E       	(No symbol) [0x00A37D86]</span><br/><span class="error">E       	(No symbol) [0x00A399E1]</span><br/><span class="error">E       	(No symbol) [0x00A39A80]</span><br/><span class="error">E       	(No symbol) [0x00A81F1B]</span><br/><span class="error">E       	(No symbol) [0x00A8093C]</span><br/><span class="error">E       	(No symbol) [0x00A7A536]</span><br/><span class="error">E       	(No symbol) [0x00A582DC]</span><br/><span class="error">E       	(No symbol) [0x00A593DD]</span><br/><span class="error">E       	GetHandleVerifier [0x00DFAABD+2539405]</span><br/><span class="error">E       	GetHandleVerifier [0x00E3A78F+2800735]</span><br/><span class="error">E       	GetHandleVerifier [0x00E3456C+2775612]</span><br/><span class="error">E       	GetHandleVerifier [0x00C251E0+616112]</span><br/><span class="error">E       	(No symbol) [0x00B35F8C]</span><br/><span class="error">E       	(No symbol) [0x00B32328]</span><br/><span class="error">E       	(No symbol) [0x00B3240B]</span><br/><span class="error">E       	(No symbol) [0x00B24FF7]</span><br/><span class="error">E       	BaseThreadInitThunk [0x764600C9+25]</span><br/><span class="error">E       	RtlGetAppContainerNamedObjectPath [0x77457B4E+286]</span><br/><span class="error">E       	RtlGetAppContainerNamedObjectPath [0x77457B1E+238]</span><br/><br/>C:\Python311\Lib\site-packages\selenium\webdriver\remote\errorhandler.py:245: SessionNotCreatedException[gw5] win32 -- Python 3.11.4 C:\Python311\python.exe<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">testCases/test_docs_series_page.py::Test_DocsSeries::test_01_featured_documentary_section</td>
-          <td class="col-duration">36.41</td>
+          <td class="col-duration">12.99</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">[gw0] win32 -- Python 3.11.4 C:\Python311\python.exe<br/>[gw0] win32 -- Python 3.11.4 C:\Python311\python.exe[gw0] win32 -- Python 3.11.4 C:\Python311\python.exe[gw0] win32 -- Python 3.11.4 C:\Python311\python.exe<br/> -----------------------------Captured stderr setup------------------------------ <br/>INFO:root:
+            <div class="log"> -----------------------------Captured stderr setup------------------------------ <br/>INFO:root:
  navigae to https://www.tvo.org 
 INFO:root:
  close the popups
@@ -311,205 +302,215 @@ INFO     root:utils.py:50
  ***** test_01_featured_documentary_section *****
 INFO:root:
  explicit wait for the element//p[normalize-space(text())=&#x27;Featured Documentary&#x27;]
-INFO:root:Locator: //p[normalize-space(text())=&#x27;Featured Documentary&#x27;] selenium element: &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;28735454b53451b6fe0881feed89a42b&quot;, element=&quot;C5A18246919CDB5C917B334182A57CF5_element_38&quot;)&gt;
+INFO:root:Locator: //p[normalize-space(text())=&#x27;Featured Documentary&#x27;] selenium element: &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;a886a956115b53cd52e438df1b9b8e64&quot;, element=&quot;6B2D720C057F05303971BDDD01F58ABB_element_39&quot;)&gt;
 <br/> -------------------------------Captured log call-------------------------------- <br/>INFO     root:test_docs_series_page.py:7 
  ***** test_01_featured_documentary_section *****
 INFO     root:utils.py:43 
  explicit wait for the element//p[normalize-space(text())=&#x27;Featured Documentary&#x27;]
-INFO     root:docs_and_series_page.py:19 Locator: //p[normalize-space(text())=&#x27;Featured Documentary&#x27;] selenium element: &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;28735454b53451b6fe0881feed89a42b&quot;, element=&quot;C5A18246919CDB5C917B334182A57CF5_element_38&quot;)&gt;<br/></div></td></tr></tbody>
+INFO     root:docs_and_series_page.py:19 Locator: //p[normalize-space(text())=&#x27;Featured Documentary&#x27;] selenium element: &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;a886a956115b53cd52e438df1b9b8e64&quot;, element=&quot;6B2D720C057F05303971BDDD01F58ABB_element_39&quot;)&gt;<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">testCases/test_docs_series_page.py::Test_DocsSeries::test_05_recently_added_list</td>
-          <td class="col-duration">36.81</td>
+          <td class="col-name">testCases/test_docs_series_page.py::Test_DocsSeries::test_02_featured_documentary_title</td>
+          <td class="col-duration">0.03</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">[gw4] win32 -- Python 3.11.4 C:\Python311\python.exe<br/>[gw4] win32 -- Python 3.11.4 C:\Python311\python.exe[gw4] win32 -- Python 3.11.4 C:\Python311\python.exe[gw4] win32 -- Python 3.11.4 C:\Python311\python.exe<br/> -----------------------------Captured stderr setup------------------------------ <br/>INFO:root:
- navigae to https://www.tvo.org 
+            <div class="log"> ------------------------------Captured stderr call------------------------------ <br/>INFO:root:
+ ***** test_02_featured_documentary_title *****
 INFO:root:
- close the popups
-INFO:root:
- explicit wait for the element//a[contains(@aria-label,&#x27;Close&#x27;)]
-INFO:root:
- navigate to docs and series page
-INFO:root:
- explicit wait for the element//div[normalize-space(text())=&#x27;Docs &amp; Series&#x27;]
-INFO:root:
- getting test data for the test case test_docs_series_page
-<br/> -------------------------------Captured log setup------------------------------- <br/>INFO     root:utils.py:30 
- navigae to https://www.tvo.org 
-INFO     root:utils.py:32 
- close the popups
+ explicit wait for the element//p[normalize-space(text())=&#x27;Ever Deadly&#x27;]
+INFO:root:Locator: //p[normalize-space(text())=&#x27;Ever Deadly&#x27;] selenium element: &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;a886a956115b53cd52e438df1b9b8e64&quot;, element=&quot;6B2D720C057F05303971BDDD01F58ABB_element_40&quot;)&gt;
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     root:test_docs_series_page.py:11 
+ ***** test_02_featured_documentary_title *****
 INFO     root:utils.py:43 
- explicit wait for the element//a[contains(@aria-label,&#x27;Close&#x27;)]
-INFO     root:utils.py:36 
- navigate to docs and series page
-INFO     root:utils.py:43 
- explicit wait for the element//div[normalize-space(text())=&#x27;Docs &amp; Series&#x27;]
-INFO     root:utils.py:50 
- getting test data for the test case test_docs_series_page<br/> ------------------------------Captured stderr call------------------------------ <br/>INFO:root:
- ***** test_05_recently_added_list *****
-INFO:root:
- explicit wait for the element//p[normalize-space(text())=&#x27;Heartbeat&#x27; and contains(@class,&#x27;title&#x27;) and ancestor::div[contains(@aria-label,&#x27;Recently Added&#x27;)]]
-INFO:root:Locator: //p[normalize-space(text())=&#x27;Heartbeat&#x27; and contains(@class,&#x27;title&#x27;) and ancestor::div[contains(@aria-label,&#x27;Recently Added&#x27;)]] selenium element: &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;990d6078e275ffa0481cbe66159cff8e&quot;, element=&quot;12B4925D5F381127006A8A5E53057F8F_element_37&quot;)&gt;
-INFO:root:
- explicit wait for the element//p[normalize-space(text())=&#x27;Seeds of Destruction&#x27; and contains(@class,&#x27;caption&#x27;) and ancestor::div[contains(@aria-label,&#x27;Recently Added&#x27;)]]
-INFO:root:Locator: //p[normalize-space(text())=&#x27;Seeds of Destruction&#x27; and contains(@class,&#x27;caption&#x27;) and ancestor::div[contains(@aria-label,&#x27;Recently Added&#x27;)]] selenium element: &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;990d6078e275ffa0481cbe66159cff8e&quot;, element=&quot;12B4925D5F381127006A8A5E53057F8F_element_38&quot;)&gt;
-INFO:root:
- explicit wait for the element//p[normalize-space(text())=&#x27;The Life-Sized City&#x27; and contains(@class,&#x27;title&#x27;) and ancestor::div[contains(@aria-label,&#x27;Recently Added&#x27;)]]
-INFO:root:Locator: //p[normalize-space(text())=&#x27;The Life-Sized City&#x27; and contains(@class,&#x27;title&#x27;) and ancestor::div[contains(@aria-label,&#x27;Recently Added&#x27;)]] selenium element: &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;990d6078e275ffa0481cbe66159cff8e&quot;, element=&quot;12B4925D5F381127006A8A5E53057F8F_element_39&quot;)&gt;
-INFO:root:
- explicit wait for the element//p[normalize-space(text())=&#x27;Antwerp&#x27; and contains(@class,&#x27;caption&#x27;) and ancestor::div[contains(@aria-label,&#x27;Recently Added&#x27;)]]
-INFO:root:Locator: //p[normalize-space(text())=&#x27;Antwerp&#x27; and contains(@class,&#x27;caption&#x27;) and ancestor::div[contains(@aria-label,&#x27;Recently Added&#x27;)]] selenium element: &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;990d6078e275ffa0481cbe66159cff8e&quot;, element=&quot;12B4925D5F381127006A8A5E53057F8F_element_40&quot;)&gt;
-INFO:root:
- explicit wait for the element//p[normalize-space(text())=&#x27;Killing Patient Zero&#x27; and contains(@class,&#x27;title&#x27;) and ancestor::div[contains(@aria-label,&#x27;Recently Added&#x27;)]]
-INFO:root:Locator: //p[normalize-space(text())=&#x27;Killing Patient Zero&#x27; and contains(@class,&#x27;title&#x27;) and ancestor::div[contains(@aria-label,&#x27;Recently Added&#x27;)]] selenium element: &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;990d6078e275ffa0481cbe66159cff8e&quot;, element=&quot;12B4925D5F381127006A8A5E53057F8F_element_41&quot;)&gt;
-INFO:root:
- explicit wait for the element//p[normalize-space(text())=&#x27;2023&#x27; and contains(@class,&#x27;caption&#x27;) and ancestor::div[contains(@aria-label,&#x27;Recently Added&#x27;)]]
-INFO:root:Locator: //p[normalize-space(text())=&#x27;2023&#x27; and contains(@class,&#x27;caption&#x27;) and ancestor::div[contains(@aria-label,&#x27;Recently Added&#x27;)]] selenium element: &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;990d6078e275ffa0481cbe66159cff8e&quot;, element=&quot;12B4925D5F381127006A8A5E53057F8F_element_42&quot;)&gt;
-<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     root:test_docs_series_page.py:23 
- ***** test_05_recently_added_list *****
-INFO     root:utils.py:43 
- explicit wait for the element//p[normalize-space(text())=&#x27;Heartbeat&#x27; and contains(@class,&#x27;title&#x27;) and ancestor::div[contains(@aria-label,&#x27;Recently Added&#x27;)]]
-INFO     root:docs_and_series_page.py:73 Locator: //p[normalize-space(text())=&#x27;Heartbeat&#x27; and contains(@class,&#x27;title&#x27;) and ancestor::div[contains(@aria-label,&#x27;Recently Added&#x27;)]] selenium element: &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;990d6078e275ffa0481cbe66159cff8e&quot;, element=&quot;12B4925D5F381127006A8A5E53057F8F_element_37&quot;)&gt;
-INFO     root:utils.py:43 
- explicit wait for the element//p[normalize-space(text())=&#x27;Seeds of Destruction&#x27; and contains(@class,&#x27;caption&#x27;) and ancestor::div[contains(@aria-label,&#x27;Recently Added&#x27;)]]
-INFO     root:docs_and_series_page.py:77 Locator: //p[normalize-space(text())=&#x27;Seeds of Destruction&#x27; and contains(@class,&#x27;caption&#x27;) and ancestor::div[contains(@aria-label,&#x27;Recently Added&#x27;)]] selenium element: &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;990d6078e275ffa0481cbe66159cff8e&quot;, element=&quot;12B4925D5F381127006A8A5E53057F8F_element_38&quot;)&gt;
-INFO     root:utils.py:43 
- explicit wait for the element//p[normalize-space(text())=&#x27;The Life-Sized City&#x27; and contains(@class,&#x27;title&#x27;) and ancestor::div[contains(@aria-label,&#x27;Recently Added&#x27;)]]
-INFO     root:docs_and_series_page.py:73 Locator: //p[normalize-space(text())=&#x27;The Life-Sized City&#x27; and contains(@class,&#x27;title&#x27;) and ancestor::div[contains(@aria-label,&#x27;Recently Added&#x27;)]] selenium element: &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;990d6078e275ffa0481cbe66159cff8e&quot;, element=&quot;12B4925D5F381127006A8A5E53057F8F_element_39&quot;)&gt;
-INFO     root:utils.py:43 
- explicit wait for the element//p[normalize-space(text())=&#x27;Antwerp&#x27; and contains(@class,&#x27;caption&#x27;) and ancestor::div[contains(@aria-label,&#x27;Recently Added&#x27;)]]
-INFO     root:docs_and_series_page.py:77 Locator: //p[normalize-space(text())=&#x27;Antwerp&#x27; and contains(@class,&#x27;caption&#x27;) and ancestor::div[contains(@aria-label,&#x27;Recently Added&#x27;)]] selenium element: &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;990d6078e275ffa0481cbe66159cff8e&quot;, element=&quot;12B4925D5F381127006A8A5E53057F8F_element_40&quot;)&gt;
-INFO     root:utils.py:43 
- explicit wait for the element//p[normalize-space(text())=&#x27;Killing Patient Zero&#x27; and contains(@class,&#x27;title&#x27;) and ancestor::div[contains(@aria-label,&#x27;Recently Added&#x27;)]]
-INFO     root:docs_and_series_page.py:73 Locator: //p[normalize-space(text())=&#x27;Killing Patient Zero&#x27; and contains(@class,&#x27;title&#x27;) and ancestor::div[contains(@aria-label,&#x27;Recently Added&#x27;)]] selenium element: &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;990d6078e275ffa0481cbe66159cff8e&quot;, element=&quot;12B4925D5F381127006A8A5E53057F8F_element_41&quot;)&gt;
-INFO     root:utils.py:43 
- explicit wait for the element//p[normalize-space(text())=&#x27;2023&#x27; and contains(@class,&#x27;caption&#x27;) and ancestor::div[contains(@aria-label,&#x27;Recently Added&#x27;)]]
-INFO     root:docs_and_series_page.py:77 Locator: //p[normalize-space(text())=&#x27;2023&#x27; and contains(@class,&#x27;caption&#x27;) and ancestor::div[contains(@aria-label,&#x27;Recently Added&#x27;)]] selenium element: &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;990d6078e275ffa0481cbe66159cff8e&quot;, element=&quot;12B4925D5F381127006A8A5E53057F8F_element_42&quot;)&gt;<br/></div></td></tr></tbody>
+ explicit wait for the element//p[normalize-space(text())=&#x27;Ever Deadly&#x27;]
+INFO     root:docs_and_series_page.py:30 Locator: //p[normalize-space(text())=&#x27;Ever Deadly&#x27;] selenium element: &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;a886a956115b53cd52e438df1b9b8e64&quot;, element=&quot;6B2D720C057F05303971BDDD01F58ABB_element_40&quot;)&gt;<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">testCases/test_docs_series_page.py::Test_DocsSeries::test_03_featured_documentary_description</td>
-          <td class="col-duration">36.64</td>
+          <td class="col-duration">0.03</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">[gw2] win32 -- Python 3.11.4 C:\Python311\python.exe<br/>[gw2] win32 -- Python 3.11.4 C:\Python311\python.exe[gw2] win32 -- Python 3.11.4 C:\Python311\python.exe[gw2] win32 -- Python 3.11.4 C:\Python311\python.exe<br/> -----------------------------Captured stderr setup------------------------------ <br/>INFO:root:
- navigae to https://www.tvo.org 
-INFO:root:
- close the popups
-INFO:root:
- explicit wait for the element//a[contains(@aria-label,&#x27;Close&#x27;)]
-INFO:root:
- navigate to docs and series page
-INFO:root:
- explicit wait for the element//div[normalize-space(text())=&#x27;Docs &amp; Series&#x27;]
-INFO:root:
- getting test data for the test case test_docs_series_page
-<br/> -------------------------------Captured log setup------------------------------- <br/>INFO     root:utils.py:30 
- navigae to https://www.tvo.org 
-INFO     root:utils.py:32 
- close the popups
-INFO     root:utils.py:43 
- explicit wait for the element//a[contains(@aria-label,&#x27;Close&#x27;)]
-INFO     root:utils.py:36 
- navigate to docs and series page
-INFO     root:utils.py:43 
- explicit wait for the element//div[normalize-space(text())=&#x27;Docs &amp; Series&#x27;]
-INFO     root:utils.py:50 
- getting test data for the test case test_docs_series_page<br/> ------------------------------Captured stderr call------------------------------ <br/>INFO:root:
+            <div class="log"> ------------------------------Captured stderr call------------------------------ <br/>INFO:root:
  ***** test_03_featured_documentary_description  *****
 INFO:root:
  explicit wait for the element//p[normalize-space(text())=&#x27;An immersive, visceral music and cinama experience featuring avant-garde Inuit throat singer Tanya Tagaq.&#x27;]
-INFO:root:Locator: //p[normalize-space(text())=&#x27;An immersive, visceral music and cinama experience featuring avant-garde Inuit throat singer Tanya Tagaq.&#x27;] selenium element: &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;2b871a402ca8a1ad6df4874c51d28c13&quot;, element=&quot;C4FD819AC2EF629B0464D02D67823339_element_39&quot;)&gt;
+INFO:root:Locator: //p[normalize-space(text())=&#x27;An immersive, visceral music and cinama experience featuring avant-garde Inuit throat singer Tanya Tagaq.&#x27;] selenium element: &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;a886a956115b53cd52e438df1b9b8e64&quot;, element=&quot;6B2D720C057F05303971BDDD01F58ABB_element_41&quot;)&gt;
 <br/> -------------------------------Captured log call-------------------------------- <br/>INFO     root:test_docs_series_page.py:15 
  ***** test_03_featured_documentary_description  *****
 INFO     root:utils.py:43 
  explicit wait for the element//p[normalize-space(text())=&#x27;An immersive, visceral music and cinama experience featuring avant-garde Inuit throat singer Tanya Tagaq.&#x27;]
-INFO     root:docs_and_series_page.py:41 Locator: //p[normalize-space(text())=&#x27;An immersive, visceral music and cinama experience featuring avant-garde Inuit throat singer Tanya Tagaq.&#x27;] selenium element: &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;2b871a402ca8a1ad6df4874c51d28c13&quot;, element=&quot;C4FD819AC2EF629B0464D02D67823339_element_39&quot;)&gt;<br/></div></td></tr></tbody>
+INFO     root:docs_and_series_page.py:41 Locator: //p[normalize-space(text())=&#x27;An immersive, visceral music and cinama experience featuring avant-garde Inuit throat singer Tanya Tagaq.&#x27;] selenium element: &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;a886a956115b53cd52e438df1b9b8e64&quot;, element=&quot;6B2D720C057F05303971BDDD01F58ABB_element_41&quot;)&gt;<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">testCases/test_docs_series_page.py::Test_DocsSeries::test_04_featured_documentary_play</td>
-          <td class="col-duration">38.10</td>
+          <td class="col-duration">0.74</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">[gw3] win32 -- Python 3.11.4 C:\Python311\python.exe<br/>[gw3] win32 -- Python 3.11.4 C:\Python311\python.exe[gw3] win32 -- Python 3.11.4 C:\Python311\python.exe[gw3] win32 -- Python 3.11.4 C:\Python311\python.exe<br/> -----------------------------Captured stderr setup------------------------------ <br/>INFO:root:
- navigae to https://www.tvo.org 
-INFO:root:
- close the popups
-INFO:root:
- explicit wait for the element//a[contains(@aria-label,&#x27;Close&#x27;)]
-INFO:root:
- navigate to docs and series page
-INFO:root:
- explicit wait for the element//div[normalize-space(text())=&#x27;Docs &amp; Series&#x27;]
-INFO:root:
- getting test data for the test case test_docs_series_page
-<br/> -------------------------------Captured log setup------------------------------- <br/>INFO     root:utils.py:30 
- navigae to https://www.tvo.org 
-INFO     root:utils.py:32 
- close the popups
-INFO     root:utils.py:43 
- explicit wait for the element//a[contains(@aria-label,&#x27;Close&#x27;)]
-INFO     root:utils.py:36 
- navigate to docs and series page
-INFO     root:utils.py:43 
- explicit wait for the element//div[normalize-space(text())=&#x27;Docs &amp; Series&#x27;]
-INFO     root:utils.py:50 
- getting test data for the test case test_docs_series_page<br/> ------------------------------Captured stderr call------------------------------ <br/>INFO:root:
+            <div class="log"> ------------------------------Captured stderr call------------------------------ <br/>INFO:root:
  ***** test_04_featured_documentary_play *****
 INFO:root:
  explicit wait for the element//span[text()=&#x27;Watch Now&#x27;]
-INFO:root:Locator: //span[text()=&#x27;Watch Now&#x27;] selenium element: &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;8496d6f607ca13895994ed9ec36c89c4&quot;, element=&quot;0DCBBAEB0BFBF5B7560B452C02927EE7_element_38&quot;)&gt;
+INFO:root:Locator: //span[text()=&#x27;Watch Now&#x27;] selenium element: &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;a886a956115b53cd52e438df1b9b8e64&quot;, element=&quot;6B2D720C057F05303971BDDD01F58ABB_element_42&quot;)&gt;
 INFO:root:Current URL after redirection https://www.tvo.org/video/documentaries/ever-deadly
 <br/> -------------------------------Captured log call-------------------------------- <br/>INFO     root:test_docs_series_page.py:19 
  ***** test_04_featured_documentary_play *****
 INFO     root:utils.py:43 
  explicit wait for the element//span[text()=&#x27;Watch Now&#x27;]
-INFO     root:docs_and_series_page.py:51 Locator: //span[text()=&#x27;Watch Now&#x27;] selenium element: &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;8496d6f607ca13895994ed9ec36c89c4&quot;, element=&quot;0DCBBAEB0BFBF5B7560B452C02927EE7_element_38&quot;)&gt;
+INFO     root:docs_and_series_page.py:51 Locator: //span[text()=&#x27;Watch Now&#x27;] selenium element: &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;a886a956115b53cd52e438df1b9b8e64&quot;, element=&quot;6B2D720C057F05303971BDDD01F58ABB_element_42&quot;)&gt;
 INFO     root:docs_and_series_page.py:53 Current URL after redirection https://www.tvo.org/video/documentaries/ever-deadly<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">testCases/test_docs_series_page.py::Test_DocsSeries::test_02_featured_documentary_title</td>
-          <td class="col-duration">36.87</td>
+          <td class="col-name">testCases/test_docs_series_page.py::Test_DocsSeries::test_05_recently_added_list</td>
+          <td class="col-duration">0.19</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">[gw1] win32 -- Python 3.11.4 C:\Python311\python.exe<br/>[gw1] win32 -- Python 3.11.4 C:\Python311\python.exe[gw1] win32 -- Python 3.11.4 C:\Python311\python.exe[gw1] win32 -- Python 3.11.4 C:\Python311\python.exe<br/> -----------------------------Captured stderr setup------------------------------ <br/>INFO:root:
- navigae to https://www.tvo.org 
+            <div class="log"> ------------------------------Captured stderr call------------------------------ <br/>INFO:root:
+ ***** test_05_recently_added_list *****
 INFO:root:
- close the popups
+ explicit wait for the element//p[normalize-space(text())=&#x27;Heartbeat&#x27; and contains(@class,&#x27;title&#x27;) and ancestor::div[contains(@aria-label,&#x27;Recently Added&#x27;)]]
+INFO:root:Locator: //p[normalize-space(text())=&#x27;Heartbeat&#x27; and contains(@class,&#x27;title&#x27;) and ancestor::div[contains(@aria-label,&#x27;Recently Added&#x27;)]] selenium element: &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;a886a956115b53cd52e438df1b9b8e64&quot;, element=&quot;6B2D720C057F05303971BDDD01F58ABB_element_45&quot;)&gt;
 INFO:root:
- explicit wait for the element//a[contains(@aria-label,&#x27;Close&#x27;)]
+ explicit wait for the element//p[normalize-space(text())=&#x27;Seeds of Destruction&#x27; and contains(@class,&#x27;caption&#x27;) and ancestor::div[contains(@aria-label,&#x27;Recently Added&#x27;)]]
+INFO:root:Locator: //p[normalize-space(text())=&#x27;Seeds of Destruction&#x27; and contains(@class,&#x27;caption&#x27;) and ancestor::div[contains(@aria-label,&#x27;Recently Added&#x27;)]] selenium element: &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;a886a956115b53cd52e438df1b9b8e64&quot;, element=&quot;6B2D720C057F05303971BDDD01F58ABB_element_46&quot;)&gt;
 INFO:root:
- navigate to docs and series page
+ explicit wait for the element//p[normalize-space(text())=&#x27;The Life-Sized City&#x27; and contains(@class,&#x27;title&#x27;) and ancestor::div[contains(@aria-label,&#x27;Recently Added&#x27;)]]
+INFO:root:Locator: //p[normalize-space(text())=&#x27;The Life-Sized City&#x27; and contains(@class,&#x27;title&#x27;) and ancestor::div[contains(@aria-label,&#x27;Recently Added&#x27;)]] selenium element: &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;a886a956115b53cd52e438df1b9b8e64&quot;, element=&quot;6B2D720C057F05303971BDDD01F58ABB_element_47&quot;)&gt;
 INFO:root:
- explicit wait for the element//div[normalize-space(text())=&#x27;Docs &amp; Series&#x27;]
+ explicit wait for the element//p[normalize-space(text())=&#x27;Antwerp&#x27; and contains(@class,&#x27;caption&#x27;) and ancestor::div[contains(@aria-label,&#x27;Recently Added&#x27;)]]
+INFO:root:Locator: //p[normalize-space(text())=&#x27;Antwerp&#x27; and contains(@class,&#x27;caption&#x27;) and ancestor::div[contains(@aria-label,&#x27;Recently Added&#x27;)]] selenium element: &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;a886a956115b53cd52e438df1b9b8e64&quot;, element=&quot;6B2D720C057F05303971BDDD01F58ABB_element_48&quot;)&gt;
 INFO:root:
- getting test data for the test case test_docs_series_page
-<br/> -------------------------------Captured log setup------------------------------- <br/>INFO     root:utils.py:30 
- navigae to https://www.tvo.org 
-INFO     root:utils.py:32 
- close the popups
+ explicit wait for the element//p[normalize-space(text())=&#x27;Killing Patient Zero&#x27; and contains(@class,&#x27;title&#x27;) and ancestor::div[contains(@aria-label,&#x27;Recently Added&#x27;)]]
+INFO:root:Locator: //p[normalize-space(text())=&#x27;Killing Patient Zero&#x27; and contains(@class,&#x27;title&#x27;) and ancestor::div[contains(@aria-label,&#x27;Recently Added&#x27;)]] selenium element: &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;a886a956115b53cd52e438df1b9b8e64&quot;, element=&quot;6B2D720C057F05303971BDDD01F58ABB_element_49&quot;)&gt;
+INFO:root:
+ explicit wait for the element//p[normalize-space(text())=&#x27;2023&#x27; and contains(@class,&#x27;caption&#x27;) and ancestor::div[contains(@aria-label,&#x27;Recently Added&#x27;)]]
+INFO:root:Locator: //p[normalize-space(text())=&#x27;2023&#x27; and contains(@class,&#x27;caption&#x27;) and ancestor::div[contains(@aria-label,&#x27;Recently Added&#x27;)]] selenium element: &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;a886a956115b53cd52e438df1b9b8e64&quot;, element=&quot;6B2D720C057F05303971BDDD01F58ABB_element_50&quot;)&gt;
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     root:test_docs_series_page.py:23 
+ ***** test_05_recently_added_list *****
 INFO     root:utils.py:43 
- explicit wait for the element//a[contains(@aria-label,&#x27;Close&#x27;)]
-INFO     root:utils.py:36 
- navigate to docs and series page
+ explicit wait for the element//p[normalize-space(text())=&#x27;Heartbeat&#x27; and contains(@class,&#x27;title&#x27;) and ancestor::div[contains(@aria-label,&#x27;Recently Added&#x27;)]]
+INFO     root:docs_and_series_page.py:73 Locator: //p[normalize-space(text())=&#x27;Heartbeat&#x27; and contains(@class,&#x27;title&#x27;) and ancestor::div[contains(@aria-label,&#x27;Recently Added&#x27;)]] selenium element: &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;a886a956115b53cd52e438df1b9b8e64&quot;, element=&quot;6B2D720C057F05303971BDDD01F58ABB_element_45&quot;)&gt;
 INFO     root:utils.py:43 
- explicit wait for the element//div[normalize-space(text())=&#x27;Docs &amp; Series&#x27;]
-INFO     root:utils.py:50 
- getting test data for the test case test_docs_series_page<br/> ------------------------------Captured stderr call------------------------------ <br/>INFO:root:
- ***** test_02_featured_documentary_title *****
+ explicit wait for the element//p[normalize-space(text())=&#x27;Seeds of Destruction&#x27; and contains(@class,&#x27;caption&#x27;) and ancestor::div[contains(@aria-label,&#x27;Recently Added&#x27;)]]
+INFO     root:docs_and_series_page.py:77 Locator: //p[normalize-space(text())=&#x27;Seeds of Destruction&#x27; and contains(@class,&#x27;caption&#x27;) and ancestor::div[contains(@aria-label,&#x27;Recently Added&#x27;)]] selenium element: &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;a886a956115b53cd52e438df1b9b8e64&quot;, element=&quot;6B2D720C057F05303971BDDD01F58ABB_element_46&quot;)&gt;
+INFO     root:utils.py:43 
+ explicit wait for the element//p[normalize-space(text())=&#x27;The Life-Sized City&#x27; and contains(@class,&#x27;title&#x27;) and ancestor::div[contains(@aria-label,&#x27;Recently Added&#x27;)]]
+INFO     root:docs_and_series_page.py:73 Locator: //p[normalize-space(text())=&#x27;The Life-Sized City&#x27; and contains(@class,&#x27;title&#x27;) and ancestor::div[contains(@aria-label,&#x27;Recently Added&#x27;)]] selenium element: &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;a886a956115b53cd52e438df1b9b8e64&quot;, element=&quot;6B2D720C057F05303971BDDD01F58ABB_element_47&quot;)&gt;
+INFO     root:utils.py:43 
+ explicit wait for the element//p[normalize-space(text())=&#x27;Antwerp&#x27; and contains(@class,&#x27;caption&#x27;) and ancestor::div[contains(@aria-label,&#x27;Recently Added&#x27;)]]
+INFO     root:docs_and_series_page.py:77 Locator: //p[normalize-space(text())=&#x27;Antwerp&#x27; and contains(@class,&#x27;caption&#x27;) and ancestor::div[contains(@aria-label,&#x27;Recently Added&#x27;)]] selenium element: &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;a886a956115b53cd52e438df1b9b8e64&quot;, element=&quot;6B2D720C057F05303971BDDD01F58ABB_element_48&quot;)&gt;
+INFO     root:utils.py:43 
+ explicit wait for the element//p[normalize-space(text())=&#x27;Killing Patient Zero&#x27; and contains(@class,&#x27;title&#x27;) and ancestor::div[contains(@aria-label,&#x27;Recently Added&#x27;)]]
+INFO     root:docs_and_series_page.py:73 Locator: //p[normalize-space(text())=&#x27;Killing Patient Zero&#x27; and contains(@class,&#x27;title&#x27;) and ancestor::div[contains(@aria-label,&#x27;Recently Added&#x27;)]] selenium element: &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;a886a956115b53cd52e438df1b9b8e64&quot;, element=&quot;6B2D720C057F05303971BDDD01F58ABB_element_49&quot;)&gt;
+INFO     root:utils.py:43 
+ explicit wait for the element//p[normalize-space(text())=&#x27;2023&#x27; and contains(@class,&#x27;caption&#x27;) and ancestor::div[contains(@aria-label,&#x27;Recently Added&#x27;)]]
+INFO     root:docs_and_series_page.py:77 Locator: //p[normalize-space(text())=&#x27;2023&#x27; and contains(@class,&#x27;caption&#x27;) and ancestor::div[contains(@aria-label,&#x27;Recently Added&#x27;)]] selenium element: &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;a886a956115b53cd52e438df1b9b8e64&quot;, element=&quot;6B2D720C057F05303971BDDD01F58ABB_element_50&quot;)&gt;<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testCases/test_docs_series_page.py::Test_DocsSeries::test_06_see_more_redirection_link</td>
+          <td class="col-duration">2.64</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stderr call------------------------------ <br/>INFO:root:
+ ***** test_06_see_more_redirection_link  *****
 INFO:root:
- explicit wait for the element//p[normalize-space(text())=&#x27;Ever Deadly&#x27;]
-INFO:root:Locator: //p[normalize-space(text())=&#x27;Ever Deadly&#x27;] selenium element: &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;241077a5cb082c9ebbe01c475ccb02ff&quot;, element=&quot;4D6C76BED7B398B7382D0B41394848E6_element_37&quot;)&gt;
-<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     root:test_docs_series_page.py:11 
- ***** test_02_featured_documentary_title *****
+ explicit wait for the element//span[normalize-space(text())=&#x27;See More&#x27; and preceding-sibling::h2[normalize-space(text())=&#x27;TVO Originals&#x27;]]
+INFO:root:Locator: TVO Originals selenium element: &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;a886a956115b53cd52e438df1b9b8e64&quot;, element=&quot;6B2D720C057F05303971BDDD01F58ABB_element_51&quot;)&gt;
+INFO:root:Current URL after redirection https://www.tvo.org/series-docs/browse/categories/TVO+Originals
+INFO:root:
+ explicit wait for the element//span[normalize-space(text())=&#x27;See More&#x27; and preceding-sibling::h2[normalize-space(text())=&#x27;Art&#x27;]]
+INFO:root:Locator: Art selenium element: &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;a886a956115b53cd52e438df1b9b8e64&quot;, element=&quot;6B2D720C057F05303971BDDD01F58ABB_element_56&quot;)&gt;
+INFO:root:Current URL after redirection https://www.tvo.org/series-docs/browse/categories/Art
+INFO:root:
+ explicit wait for the element//span[normalize-space(text())=&#x27;See More&#x27; and preceding-sibling::h2[normalize-space(text())=&#x27;Canadian Docs&#x27;]]
+INFO:root:Locator: Canadian Docs selenium element: &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;a886a956115b53cd52e438df1b9b8e64&quot;, element=&quot;6B2D720C057F05303971BDDD01F58ABB_element_103&quot;)&gt;
+INFO:root:Current URL after redirection https://www.tvo.org/series-docs/browse/categories/Canadian+Docs
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     root:test_docs_series_page.py:27 
+ ***** test_06_see_more_redirection_link  *****
 INFO     root:utils.py:43 
- explicit wait for the element//p[normalize-space(text())=&#x27;Ever Deadly&#x27;]
-INFO     root:docs_and_series_page.py:30 Locator: //p[normalize-space(text())=&#x27;Ever Deadly&#x27;] selenium element: &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;241077a5cb082c9ebbe01c475ccb02ff&quot;, element=&quot;4D6C76BED7B398B7382D0B41394848E6_element_37&quot;)&gt;<br/></div></td></tr></tbody></table></body></html>
+ explicit wait for the element//span[normalize-space(text())=&#x27;See More&#x27; and preceding-sibling::h2[normalize-space(text())=&#x27;TVO Originals&#x27;]]
+INFO     root:docs_and_series_page.py:91 Locator: TVO Originals selenium element: &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;a886a956115b53cd52e438df1b9b8e64&quot;, element=&quot;6B2D720C057F05303971BDDD01F58ABB_element_51&quot;)&gt;
+INFO     root:docs_and_series_page.py:96 Current URL after redirection https://www.tvo.org/series-docs/browse/categories/TVO+Originals
+INFO     root:utils.py:43 
+ explicit wait for the element//span[normalize-space(text())=&#x27;See More&#x27; and preceding-sibling::h2[normalize-space(text())=&#x27;Art&#x27;]]
+INFO     root:docs_and_series_page.py:91 Locator: Art selenium element: &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;a886a956115b53cd52e438df1b9b8e64&quot;, element=&quot;6B2D720C057F05303971BDDD01F58ABB_element_56&quot;)&gt;
+INFO     root:docs_and_series_page.py:96 Current URL after redirection https://www.tvo.org/series-docs/browse/categories/Art
+INFO     root:utils.py:43 
+ explicit wait for the element//span[normalize-space(text())=&#x27;See More&#x27; and preceding-sibling::h2[normalize-space(text())=&#x27;Canadian Docs&#x27;]]
+INFO     root:docs_and_series_page.py:91 Locator: Canadian Docs selenium element: &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;a886a956115b53cd52e438df1b9b8e64&quot;, element=&quot;6B2D720C057F05303971BDDD01F58ABB_element_103&quot;)&gt;
+INFO     root:docs_and_series_page.py:96 Current URL after redirection https://www.tvo.org/series-docs/browse/categories/Canadian+Docs<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testCases/test_docs_series_page.py::Test_DocsSeries::test_07_image_redirection_link</td>
+          <td class="col-duration">2.30</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stderr call------------------------------ <br/>INFO:root:
+ ***** test_07_image_redirection_link *****
+INFO:root:
+ explicit wait for the element//img[ancestor::div[contains(@aria-label,&#x27;Recently Added&#x27;)] and ancestor::div[2][following-sibling::div[1][descendant::p[normalize-space(text())=&#x27;Heartbeat&#x27;]]]]
+INFO:root:Locator: //img[ancestor::div[contains(@aria-label,&#x27;Recently Added&#x27;)] and ancestor::div[2][following-sibling::div[1][descendant::p[normalize-space(text())=&#x27;Heartbeat&#x27;]]]] selenium element: &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;a886a956115b53cd52e438df1b9b8e64&quot;, element=&quot;6B2D720C057F05303971BDDD01F58ABB_element_108&quot;)&gt;
+INFO:root:Current URL after redirection https://www.tvo.org/video/seeds-of-destruction
+INFO:root:
+ explicit wait for the element//img[ancestor::div[contains(@aria-label,&#x27;Recently Added&#x27;)] and ancestor::div[2][following-sibling::div[1][descendant::p[normalize-space(text())=&#x27;Ever Deadly&#x27;]]]]
+INFO:root:Locator: //img[ancestor::div[contains(@aria-label,&#x27;Recently Added&#x27;)] and ancestor::div[2][following-sibling::div[1][descendant::p[normalize-space(text())=&#x27;Ever Deadly&#x27;]]]] selenium element: &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;a886a956115b53cd52e438df1b9b8e64&quot;, element=&quot;6B2D720C057F05303971BDDD01F58ABB_element_115&quot;)&gt;
+INFO:root:Current URL after redirection https://www.tvo.org/video/documentaries/ever-deadly
+INFO:root:
+ explicit wait for the element//img[ancestor::div[contains(@aria-label,&#x27;Recently Added&#x27;)] and ancestor::div[2][following-sibling::div[1][descendant::p[normalize-space(text())=&#x27;Evolve&#x27;]]]]
+INFO:root:Locator: //img[ancestor::div[contains(@aria-label,&#x27;Recently Added&#x27;)] and ancestor::div[2][following-sibling::div[1][descendant::p[normalize-space(text())=&#x27;Evolve&#x27;]]]] selenium element: &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;a886a956115b53cd52e438df1b9b8e64&quot;, element=&quot;6B2D720C057F05303971BDDD01F58ABB_element_118&quot;)&gt;
+INFO:root:Current URL after redirection https://www.tvo.org/video/documentaries/restore
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     root:test_docs_series_page.py:31 
+ ***** test_07_image_redirection_link *****
+INFO     root:utils.py:43 
+ explicit wait for the element//img[ancestor::div[contains(@aria-label,&#x27;Recently Added&#x27;)] and ancestor::div[2][following-sibling::div[1][descendant::p[normalize-space(text())=&#x27;Heartbeat&#x27;]]]]
+INFO     root:docs_and_series_page.py:117 Locator: //img[ancestor::div[contains(@aria-label,&#x27;Recently Added&#x27;)] and ancestor::div[2][following-sibling::div[1][descendant::p[normalize-space(text())=&#x27;Heartbeat&#x27;]]]] selenium element: &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;a886a956115b53cd52e438df1b9b8e64&quot;, element=&quot;6B2D720C057F05303971BDDD01F58ABB_element_108&quot;)&gt;
+INFO     root:docs_and_series_page.py:122 Current URL after redirection https://www.tvo.org/video/seeds-of-destruction
+INFO     root:utils.py:43 
+ explicit wait for the element//img[ancestor::div[contains(@aria-label,&#x27;Recently Added&#x27;)] and ancestor::div[2][following-sibling::div[1][descendant::p[normalize-space(text())=&#x27;Ever Deadly&#x27;]]]]
+INFO     root:docs_and_series_page.py:117 Locator: //img[ancestor::div[contains(@aria-label,&#x27;Recently Added&#x27;)] and ancestor::div[2][following-sibling::div[1][descendant::p[normalize-space(text())=&#x27;Ever Deadly&#x27;]]]] selenium element: &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;a886a956115b53cd52e438df1b9b8e64&quot;, element=&quot;6B2D720C057F05303971BDDD01F58ABB_element_115&quot;)&gt;
+INFO     root:docs_and_series_page.py:122 Current URL after redirection https://www.tvo.org/video/documentaries/ever-deadly
+INFO     root:utils.py:43 
+ explicit wait for the element//img[ancestor::div[contains(@aria-label,&#x27;Recently Added&#x27;)] and ancestor::div[2][following-sibling::div[1][descendant::p[normalize-space(text())=&#x27;Evolve&#x27;]]]]
+INFO     root:docs_and_series_page.py:117 Locator: //img[ancestor::div[contains(@aria-label,&#x27;Recently Added&#x27;)] and ancestor::div[2][following-sibling::div[1][descendant::p[normalize-space(text())=&#x27;Evolve&#x27;]]]] selenium element: &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;a886a956115b53cd52e438df1b9b8e64&quot;, element=&quot;6B2D720C057F05303971BDDD01F58ABB_element_118&quot;)&gt;
+INFO     root:docs_and_series_page.py:122 Current URL after redirection https://www.tvo.org/video/documentaries/restore<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testCases/test_docs_series_page.py::Test_DocsSeries::test_08_section_or_categories</td>
+          <td class="col-duration">0.10</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stderr call------------------------------ <br/>INFO:root:
+ ***** test_08_section_or_categories *****
+INFO:root:
+ explicit wait for the element//h2[normalize-space(text())=&#x27;Recently Added&#x27;]
+INFO:root:Locator: //h2[normalize-space(text())=&#x27;Recently Added&#x27;] selenium element: &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;a886a956115b53cd52e438df1b9b8e64&quot;, element=&quot;6B2D720C057F05303971BDDD01F58ABB_element_121&quot;)&gt;
+INFO:root:
+ explicit wait for the element//h2[normalize-space(text())=&#x27;Art&#x27;]
+INFO:root:Locator: //h2[normalize-space(text())=&#x27;Art&#x27;] selenium element: &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;a886a956115b53cd52e438df1b9b8e64&quot;, element=&quot;6B2D720C057F05303971BDDD01F58ABB_element_122&quot;)&gt;
+INFO:root:
+ explicit wait for the element//h2[normalize-space(text())=&#x27;TVO Originals&#x27;]
+INFO:root:Locator: //h2[normalize-space(text())=&#x27;TVO Originals&#x27;] selenium element: &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;a886a956115b53cd52e438df1b9b8e64&quot;, element=&quot;6B2D720C057F05303971BDDD01F58ABB_element_123&quot;)&gt;
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     root:test_docs_series_page.py:35 
+ ***** test_08_section_or_categories *****
+INFO     root:utils.py:43 
+ explicit wait for the element//h2[normalize-space(text())=&#x27;Recently Added&#x27;]
+INFO     root:docs_and_series_page.py:140 Locator: //h2[normalize-space(text())=&#x27;Recently Added&#x27;] selenium element: &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;a886a956115b53cd52e438df1b9b8e64&quot;, element=&quot;6B2D720C057F05303971BDDD01F58ABB_element_121&quot;)&gt;
+INFO     root:utils.py:43 
+ explicit wait for the element//h2[normalize-space(text())=&#x27;Art&#x27;]
+INFO     root:docs_and_series_page.py:140 Locator: //h2[normalize-space(text())=&#x27;Art&#x27;] selenium element: &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;a886a956115b53cd52e438df1b9b8e64&quot;, element=&quot;6B2D720C057F05303971BDDD01F58ABB_element_122&quot;)&gt;
+INFO     root:utils.py:43 
+ explicit wait for the element//h2[normalize-space(text())=&#x27;TVO Originals&#x27;]
+INFO     root:docs_and_series_page.py:140 Locator: //h2[normalize-space(text())=&#x27;TVO Originals&#x27;] selenium element: &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;a886a956115b53cd52e438df1b9b8e64&quot;, element=&quot;6B2D720C057F05303971BDDD01F58ABB_element_123&quot;)&gt;<br/></div></td></tr></tbody></table></body></html>

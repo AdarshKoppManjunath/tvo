@@ -103,6 +103,45 @@ class DocsSeriesPage:
         except Exception as error:
             self.util_obj.logger.error("Error occured with the exception %s"%(error))
             return False, error
+    def image_redirection_link(self):
+        try:
+            #this function will check for image redirection links for all sections( recently added, arts, etc) on docs and series (ALL page). Test data should be updated ( added only 3 for the current test)
+            for data in self.test_data["image_redirection_links"]:
+                section_name=data["section_name"]
+                title=data["title"]
+                redirection_link=data["redirection_link"]
+                img_locator=self.locators_data["image_redirection_link_ds_page"].replace("'<section_name>'","'%s'"%(section_name))
+                img_locator=img_locator.replace("'<title>'","'%s'"%(title))
+                self.util_obj.explict_wait_unitl_element_found(self.delay,By.XPATH,img_locator)
+                element = self.driver.find_element("xpath",img_locator)
+                self.util_obj.logger.info("Locator: %s selenium element: %s"%(img_locator,element))
+                #scroll down
+                actions = ActionChains(self.driver)
+                actions.move_to_element(element).perform()
+                element.click()
+                self.util_obj.logger.info("Current URL after redirection %s"%(self.driver.current_url))
+                if redirection_link   not in self.driver.current_url:
+                    self.driver.back()
+                    self.util_obj.logger.error("Error occured: %s Redirection link is not working for %s"%(redirection_link,img_locator ))
+                    return False, "Redirection link is not working for %s"%(img_locator)
+                self.driver.back()
+            return True,element
+        except Exception as error:
+            self.util_obj.logger.error("Error occured with the exception %s"%(error))
+            return False, error
+    
+    def section_or_categories(self):
+        try:
+            #this function verify whether all catrgories are present or not ( test data should be updated with all the expected values, added only 3 for the current test)
+            for category in self.test_data["section_or_categories"]:
+                category=self.locators_data["all_section_or_categories_ds_page"].replace("''","'%s'"%(category))
+                self.util_obj.explict_wait_unitl_element_found(self.delay,By.XPATH,category)
+                element = self.driver.find_element("xpath",category)
+                self.util_obj.logger.info("Locator: %s selenium element: %s"%(category,element))
+            return True,element
+        except Exception as error:
+            self.util_obj.logger.error("Error occured with the exception %s"%(error))
+            return False, error
         
         
         

@@ -8,5 +8,7 @@
     "featured_dcoumentary_play_ds_page":"//span[text()='Watch Now']",
     "recently_added_title_ds_page":"//p[normalize-space(text())='' and contains(@class,'title') and ancestor::div[contains(@aria-label,'Recently Added')]]",
     "recently_added_caption_ds_page":"//p[normalize-space(text())='' and contains(@class,'caption') and ancestor::div[contains(@aria-label,'Recently Added')]]",
-    "see_more_redirection_link_ds_page":"//span[normalize-space(text())='See More' and preceding-sibling::h2[normalize-space(text())='']]"
+    "see_more_redirection_link_ds_page":"//span[normalize-space(text())='See More' and preceding-sibling::h2[normalize-space(text())='']]",
+    "image_redirection_link_ds_page":"//img[ancestor::div[contains(@aria-label,'<section_name>')] and ancestor::div[2][following-sibling::div[1][descendant::p[normalize-space(text())='<title>']]]]",
+    "all_section_or_categories_ds_page":"//h2[normalize-space(text())='']"
 }

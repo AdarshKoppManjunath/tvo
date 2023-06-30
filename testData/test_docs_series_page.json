@@ -32,7 +32,28 @@
                 "redirection_link":"https://www.tvo.org/series-docs/browse/categories/Canadian+Docs"
             }
 
+        ],
+        "image_redirection_links":[
+            {
+                "section_name":"Recently Added",
+                "title":"Heartbeat",
+                "redirection_link":"https://www.tvo.org/video/seeds-of-destruction"
+            },
+            {
+                "section_name":"Recently Added",
+                "title":"Ever Deadly",
+                "redirection_link":"https://www.tvo.org/video/documentaries/ever-deadly"
+            },
+            {
+                "section_name":"Recently Added",
+                "title":"Evolve",
+                "redirection_link":"https://www.tvo.org/video/documentaries/restore"
+            }
+        ],
+        "section_or_categories":[
+            "Recently Added",
+            "Art",
+            "TVO Originals"
         ]
             
-    
 }

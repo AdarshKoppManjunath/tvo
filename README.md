@@ -6,7 +6,10 @@
   3) Verify "featured documentary" description
   4) Verify "featured documentary" Watch Now button URL link.
   5) Verify "Recently Added" list.
-  6) Verify "See More" links.
+  6) Verify "See More" redirection URL links.
+  7) Verify all images URL links.
+  8) Verify all category/sections are present or not. 
+
 
 #Automation
   1) POM is used - scalable for any pages with the root URL docs and series.
@@ -21,6 +24,11 @@
   9) conftest is setup at the class level which also gives you driver, util, and page objects and these are initialized only once and passed around test cases.
   10) testcase has all assertions
   
+#Execution
+  1) To run this, install Python and PiP
+  2) Install all libraries from requirements.txt
+  3) Type "python -m pytest" in cmd. For detailed report and logs, type "python -m pytest -v -s   --capture=tee-sys  --html=reports/report.html"
+
 
 
      

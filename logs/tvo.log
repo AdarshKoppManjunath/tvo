@@ -1,32 +1,92 @@
-2023-06-29 21:00:52,899 - root - INFO - 
+2023-06-30 12:04:10,570 - root - INFO - 
  navigae to https://www.tvo.org 
-2023-06-29 21:01:11,276 - root - INFO - 
+2023-06-30 12:04:15,396 - root - INFO - 
  close the popups
-2023-06-29 21:01:11,278 - root - INFO - 
+2023-06-30 12:04:15,397 - root - INFO - 
  explicit wait for the element//a[contains(@aria-label,'Close')]
-2023-06-29 21:01:13,658 - root - INFO - 
+2023-06-30 12:04:15,492 - root - INFO - 
  navigate to docs and series page
-2023-06-29 21:01:13,663 - root - INFO - 
+2023-06-30 12:04:15,493 - root - INFO - 
  explicit wait for the element//div[normalize-space(text())='Docs & Series']
-2023-06-29 21:01:15,785 - root - INFO - 
+2023-06-30 12:04:15,778 - root - INFO - 
  getting test data for the test case test_docs_series_page
-2023-06-29 21:01:20,918 - root - INFO - 
+2023-06-30 12:04:20,782 - root - INFO - 
+ ***** test_01_featured_documentary_section *****
+2023-06-30 12:04:20,783 - root - INFO - 
+ explicit wait for the element//p[normalize-space(text())='Featured Documentary']
+2023-06-30 12:04:20,824 - root - INFO - Locator: //p[normalize-space(text())='Featured Documentary'] selenium element: <selenium.webdriver.remote.webelement.WebElement (session="a886a956115b53cd52e438df1b9b8e64", element="6B2D720C057F05303971BDDD01F58ABB_element_39")>
+2023-06-30 12:04:20,845 - root - INFO - 
  ***** test_02_featured_documentary_title *****
-2023-06-29 21:01:20,952 - root - INFO - 
- explicit wait for the element//p[normalize-space(text())2023-06-29 21:01:2023-06-29 21:01:21,710 - root - INFO - Locator: //p[normalize-space(text())='Ever Deadly'] selenium element: <selenium.webdriver.remote.webelement.WebElement (session="241077a5cb082c9ebbe01c475ccb02ff", element="4D6C76BED7B398B2023-06-29 21:01:22,383 - root - INFO - Current URL after redirection https://www.tvo.org/video/documentaries/ever-deadly
-nt (session="2b871a402ca8a1ad6df4874c51d28c13", element="C4FD819AC2EF629B0464D02D67823339_element_39")>
- INFO - 
+2023-06-30 12:04:20,847 - root - INFO - 
+ explicit wait for the element//p[normalize-space(text())='Ever Deadly']
+2023-06-30 12:04:20,876 - root - INFO - Locator: //p[normalize-space(text())='Ever Deadly'] selenium element: <selenium.webdriver.remote.webelement.WebElement (session="a886a956115b53cd52e438df1b9b8e64", element="6B2D720C057F05303971BDDD01F58ABB_element_40")>
+2023-06-30 12:04:20,879 - root - INFO - 
+ ***** test_03_featured_documentary_description  *****
+2023-06-30 12:04:20,880 - root - INFO - 
+ explicit wait for the element//p[normalize-space(text())='An immersive, visceral music and cinama experience featuring avant-garde Inuit throat singer Tanya Tagaq.']
+2023-06-30 12:04:20,910 - root - INFO - Locator: //p[normalize-space(text())='An immersive, visceral music and cinama experience featuring avant-garde Inuit throat singer Tanya Tagaq.'] selenium element: <selenium.webdriver.remote.webelement.WebElement (session="a886a956115b53cd52e438df1b9b8e64", element="6B2D720C057F05303971BDDD01F58ABB_element_41")>
+2023-06-30 12:04:20,914 - root - INFO - 
+ ***** test_04_featured_documentary_play *****
+2023-06-30 12:04:20,915 - root - INFO - 
+ explicit wait for the element//span[text()='Watch Now']
+2023-06-30 12:04:20,958 - root - INFO - Locator: //span[text()='Watch Now'] selenium element: <selenium.webdriver.remote.webelement.WebElement (session="a886a956115b53cd52e438df1b9b8e64", element="6B2D720C057F05303971BDDD01F58ABB_element_42")>
+2023-06-30 12:04:21,251 - root - INFO - Current URL after redirection https://www.tvo.org/video/documentaries/ever-deadly
+2023-06-30 12:04:21,665 - root - INFO - 
+ ***** test_05_recently_added_list *****
+2023-06-30 12:04:21,666 - root - INFO - 
+ explicit wait for the element//p[normalize-space(text())='Heartbeat' and contains(@class,'title') and ancestor::div[contains(@aria-label,'Recently Added')]]
+2023-06-30 12:04:21,699 - root - INFO - Locator: //p[normalize-space(text())='Heartbeat' and contains(@class,'title') and ancestor::div[contains(@aria-label,'Recently Added')]] selenium element: <selenium.webdriver.remote.webelement.WebElement (session="a886a956115b53cd52e438df1b9b8e64", element="6B2D720C057F05303971BDDD01F58ABB_element_45")>
+2023-06-30 12:04:21,700 - root - INFO - 
  explicit wait for the element//p[normalize-space(text())='Seeds of Destruction' and contains(@class,'caption') and ancestor::div[contains(@aria-label,'Recently Added')]]
-2023-06-29 21:01:21,711 - root - INFO - Locator: //p[normalize-space(text())='Seeds of Destruction' and contains(@class,'caption') and ancestor::div[contains(@aria-label,'Recently Added')]] selenium element: <selenium.webdriver.remote.webelement.WebElement (session="990d6078e275ffa0481cbe66159cff8e", element="12B4925D5F381127006A8A5E53057F8F_element_38")>
-2023-06-29 21:01:21,714 - root - INFO - 
+2023-06-30 12:04:21,732 - root - INFO - Locator: //p[normalize-space(text())='Seeds of Destruction' and contains(@class,'caption') and ancestor::div[contains(@aria-label,'Recently Added')]] selenium element: <selenium.webdriver.remote.webelement.WebElement (session="a886a956115b53cd52e438df1b9b8e64", element="6B2D720C057F05303971BDDD01F58ABB_element_46")>
+2023-06-30 12:04:21,732 - root - INFO - 
  explicit wait for the element//p[normalize-space(text())='The Life-Sized City' and contains(@class,'title') and ancestor::div[contains(@aria-label,'Recently Added')]]
-2023-06-29 21:01:21,913 - root - INFO - Locator: //p[normalize-space(text())='The Life-Sized City' and contains(@class,'title') and ancestor::div[contains(@aria-label,'Recently Added')]] selenium element: <selenium.webdriver.remote.webelement.WebElement (session="990d6078e275ffa0481cbe66159cff8e", element="12B4925D5F381127006A8A5E53057F8F_element_39")>
-2023-06-29 21:01:21,916 - root - INFO - 
+2023-06-30 12:04:21,765 - root - INFO - Locator: //p[normalize-space(text())='The Life-Sized City' and contains(@class,'title') and ancestor::div[contains(@aria-label,'Recently Added')]] selenium element: <selenium.webdriver.remote.webelement.WebElement (session="a886a956115b53cd52e438df1b9b8e64", element="6B2D720C057F05303971BDDD01F58ABB_element_47")>
+2023-06-30 12:04:21,766 - root - INFO - 
  explicit wait for the element//p[normalize-space(text())='Antwerp' and contains(@class,'caption') and ancestor::div[contains(@aria-label,'Recently Added')]]
-2023-06-29 21:01:22,069 - root - INFO - Locator: //p[normalize-space(text())='Antwerp' and contains(@class,'caption') and ancestor::div[contains(@aria-label,'Recently Added')]] selenium element: <selenium.webdriver.remote.webelement.WebElement (session="990d6078e275ffa0481cbe66159cff8e", element="12B4925D5F381127006A8A5E53057F8F_element_40")>
-2023-06-29 21:01:22,070 - root - INFO - 
+2023-06-30 12:04:21,797 - root - INFO - Locator: //p[normalize-space(text())='Antwerp' and contains(@class,'caption') and ancestor::div[contains(@aria-label,'Recently Added')]] selenium element: <selenium.webdriver.remote.webelement.WebElement (session="a886a956115b53cd52e438df1b9b8e64", element="6B2D720C057F05303971BDDD01F58ABB_element_48")>
+2023-06-30 12:04:21,798 - root - INFO - 
  explicit wait for the element//p[normalize-space(text())='Killing Patient Zero' and contains(@class,'title') and ancestor::div[contains(@aria-label,'Recently Added')]]
-2023-06-29 21:01:22,147 - root - INFO - Locator: //p[normalize-space(text())='Killing Patient Zero' and contains(@class,'title') and ancestor::div[contains(@aria-label,'Recently Added')]] selenium element: <selenium.webdriver.remote.webelement.WebElement (session="990d6078e275ffa0481cbe66159cff8e", element="12B4925D5F381127006A8A5E53057F8F_element_41")>
-2023-06-29 21:01:22,151 - root - INFO - 
+2023-06-30 12:04:21,828 - root - INFO - Locator: //p[normalize-space(text())='Killing Patient Zero' and contains(@class,'title') and ancestor::div[contains(@aria-label,'Recently Added')]] selenium element: <selenium.webdriver.remote.webelement.WebElement (session="a886a956115b53cd52e438df1b9b8e64", element="6B2D720C057F05303971BDDD01F58ABB_element_49")>
+2023-06-30 12:04:21,828 - root - INFO - 
  explicit wait for the element//p[normalize-space(text())='2023' and contains(@class,'caption') and ancestor::div[contains(@aria-label,'Recently Added')]]
-2023-06-29 21:01:22,206 - root - INFO - Locator: //p[normalize-space(text())='2023' and contains(@class,'caption') and ancestor::div[contains(@aria-label,'Recently Added')]] selenium element: <selenium.webdriver.remote.webelement.WebElement (session="990d6078e275ffa0481cbe66159cff8e", element="12B4925D5F381127006A8A5E53057F8F_element_42")>
+2023-06-30 12:04:21,857 - root - INFO - Locator: //p[normalize-space(text())='2023' and contains(@class,'caption') and ancestor::div[contains(@aria-label,'Recently Added')]] selenium element: <selenium.webdriver.remote.webelement.WebElement (session="a886a956115b53cd52e438df1b9b8e64", element="6B2D720C057F05303971BDDD01F58ABB_element_50")>
+2023-06-30 12:04:21,859 - root - INFO - 
+ ***** test_06_see_more_redirection_link  *****
+2023-06-30 12:04:21,860 - root - INFO - 
+ explicit wait for the element//span[normalize-space(text())='See More' and preceding-sibling::h2[normalize-space(text())='TVO Originals']]
+2023-06-30 12:04:21,890 - root - INFO - Locator: TVO Originals selenium element: <selenium.webdriver.remote.webelement.WebElement (session="a886a956115b53cd52e438df1b9b8e64", element="6B2D720C057F05303971BDDD01F58ABB_element_51")>
+2023-06-30 12:04:22,309 - root - INFO - Current URL after redirection https://www.tvo.org/series-docs/browse/categories/TVO+Originals
+2023-06-30 12:04:22,773 - root - INFO - 
+ explicit wait for the element//span[normalize-space(text())='See More' and preceding-sibling::h2[normalize-space(text())='Art']]
+2023-06-30 12:04:22,852 - root - INFO - Locator: Art selenium element: <selenium.webdriver.remote.webelement.WebElement (session="a886a956115b53cd52e438df1b9b8e64", element="6B2D720C057F05303971BDDD01F58ABB_element_56")>
+2023-06-30 12:04:23,284 - root - INFO - Current URL after redirection https://www.tvo.org/series-docs/browse/categories/Art
+2023-06-30 12:04:23,702 - root - INFO - 
+ explicit wait for the element//span[normalize-space(text())='See More' and preceding-sibling::h2[normalize-space(text())='Canadian Docs']]
+2023-06-30 12:04:23,747 - root - INFO - Locator: Canadian Docs selenium element: <selenium.webdriver.remote.webelement.WebElement (session="a886a956115b53cd52e438df1b9b8e64", element="6B2D720C057F05303971BDDD01F58ABB_element_103")>
+2023-06-30 12:04:24,137 - root - INFO - Current URL after redirection https://www.tvo.org/series-docs/browse/categories/Canadian+Docs
+2023-06-30 12:04:24,507 - root - INFO - 
+ ***** test_07_image_redirection_link *****
+2023-06-30 12:04:24,508 - root - INFO - 
+ explicit wait for the element//img[ancestor::div[contains(@aria-label,'Recently Added')] and ancestor::div[2][following-sibling::div[1][descendant::p[normalize-space(text())='Heartbeat']]]]
+2023-06-30 12:04:24,544 - root - INFO - Locator: //img[ancestor::div[contains(@aria-label,'Recently Added')] and ancestor::div[2][following-sibling::div[1][descendant::p[normalize-space(text())='Heartbeat']]]] selenium element: <selenium.webdriver.remote.webelement.WebElement (session="a886a956115b53cd52e438df1b9b8e64", element="6B2D720C057F05303971BDDD01F58ABB_element_108")>
+2023-06-30 12:04:24,960 - root - INFO - Current URL after redirection https://www.tvo.org/video/seeds-of-destruction
+2023-06-30 12:04:25,334 - root - INFO - 
+ explicit wait for the element//img[ancestor::div[contains(@aria-label,'Recently Added')] and ancestor::div[2][following-sibling::div[1][descendant::p[normalize-space(text())='Ever Deadly']]]]
+2023-06-30 12:04:25,369 - root - INFO - Locator: //img[ancestor::div[contains(@aria-label,'Recently Added')] and ancestor::div[2][following-sibling::div[1][descendant::p[normalize-space(text())='Ever Deadly']]]] selenium element: <selenium.webdriver.remote.webelement.WebElement (session="a886a956115b53cd52e438df1b9b8e64", element="6B2D720C057F05303971BDDD01F58ABB_element_115")>
+2023-06-30 12:04:25,740 - root - INFO - Current URL after redirection https://www.tvo.org/video/documentaries/ever-deadly
+2023-06-30 12:04:26,055 - root - INFO - 
+ explicit wait for the element//img[ancestor::div[contains(@aria-label,'Recently Added')] and ancestor::div[2][following-sibling::div[1][descendant::p[normalize-space(text())='Evolve']]]]
+2023-06-30 12:04:26,085 - root - INFO - Locator: //img[ancestor::div[contains(@aria-label,'Recently Added')] and ancestor::div[2][following-sibling::div[1][descendant::p[normalize-space(text())='Evolve']]]] selenium element: <selenium.webdriver.remote.webelement.WebElement (session="a886a956115b53cd52e438df1b9b8e64", element="6B2D720C057F05303971BDDD01F58ABB_element_118")>
+2023-06-30 12:04:26,476 - root - INFO - Current URL after redirection https://www.tvo.org/video/documentaries/restore
+2023-06-30 12:04:26,816 - root - INFO - 
+ ***** test_08_section_or_categories *****
+2023-06-30 12:04:26,817 - root - INFO - 
+ explicit wait for the element//h2[normalize-space(text())='Recently Added']
+2023-06-30 12:04:26,842 - root - INFO - Locator: //h2[normalize-space(text())='Recently Added'] selenium element: <selenium.webdriver.remote.webelement.WebElement (session="a886a956115b53cd52e438df1b9b8e64", element="6B2D720C057F05303971BDDD01F58ABB_element_121")>
+2023-06-30 12:04:26,843 - root - INFO - 
+ explicit wait for the element//h2[normalize-space(text())='Art']
+2023-06-30 12:04:26,873 - root - INFO - Locator: //h2[normalize-space(text())='Art'] selenium element: <selenium.webdriver.remote.webelement.WebElement (session="a886a956115b53cd52e438df1b9b8e64", element="6B2D720C057F05303971BDDD01F58ABB_element_122")>
+2023-06-30 12:04:26,873 - root - INFO - 
+ explicit wait for the element//h2[normalize-space(text())='TVO Originals']
+2023-06-30 12:04:26,895 - root - INFO - Locator: //h2[normalize-space(text())='TVO Originals'] selenium element: <selenium.webdriver.remote.webelement.WebElement (session="a886a956115b53cd52e438df1b9b8e64", element="6B2D720C057F05303971BDDD01F58ABB_element_123")>
